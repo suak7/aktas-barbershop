@@ -1,15 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap");
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
+    background-color: #0F0F0F;
     margin: 20px;
 }
 
-h1 {
-    color: #0056b3;
-    text-align: center;
+.barber-pole img {
+    width: 300px;
+    margin-top: -350px;
+    margin-left: -40px;
 }
 
-p {
-    line-height: 1.6;
+.barber-pole:hover {
+    transform: scale(1.05);
+}
+
+.gradient-text {
+    font-family: "Bodoni Moda SC", serif;
+    font-weight: 400px;
+    font-size: 90px;
+    text-align: left;
+    margin-top: 80px;
+    margin-left: 250px;
+    background-image: linear-gradient(to right, #ffffff, #ffffff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
 }
