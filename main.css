@@ -1,30 +1,115 @@
-@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap");
+@font-face {
+  font-family: "Bisdak";
+  src: url("https://github.com/suak7/aktas-barbershop/raw/refs/heads/main/Bisdak.woff2") format('truetype');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
 body {
-    background-color: #0F0F0F;
+    background-color: #000000;
     margin: 20px;
-}
-
-.barber-pole img {
-    width: 300px;
-    margin-top: -350px;
-    margin-left: -40px;
-}
-
-.barber-pole:hover {
-    transform: scale(1.05);
+    margin-bottom: 800px;
 }
 
 .gradient-text {
-    font-family: "Bodoni Moda SC", serif;
+    font-family: "Bisdak", sans-serif;
     font-weight: 400px;
     font-size: 90px;
-    text-align: left;
-    margin-top: 80px;
-    margin-left: 250px;
-    background-image: linear-gradient(to right, #ffffff, #ffffff);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
+    text-align: center;
+    margin-top: 340px;
+    margin-left: 100px;
+    color: #c59e01;
+    position: absolute;
+}
+
+.portfolio {
+    font-family: "DM Sans", sans-serif;
+    font-size: 25px;
+    margin-top: 20px; 
+    margin-left: 80px;
+    color: white;
+    position: absolute;
+}
+
+.portfolio:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 15px;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.portfolio:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.services {
+    color: white;
+    font-family: "DM Sans", sans-serif;
+    font-size: 25px;
+    margin-left: 700px;
+    margin-top: 20px;
+    position: absolute;
+}
+
+.services:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 15px;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out; 
+}
+
+.services:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.book {
+    color: white;
+    font-family: "DM Sans", sans-serif;
+    font-size: 25px;
+    margin-left: 1300px;
+    margin-top: 20px;
+    position: absolute;
+    text-decoration: none;
+}
+
+.book:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 15px;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;   
+}
+
+.book:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;  
+}
+
+.heart-of-midtown {
+    color: white;
+    font-family: "Lancelot", serif;
+    font-size: 50px;
+    margin-top: 220px;
+    margin-left: 600px;
+    position: absolute;
+    font-weight: 100;
 }
