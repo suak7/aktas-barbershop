@@ -6,9 +6,9 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
 body {
-    background-color: #000000;
+    background-color: black;
     margin: 20px;
-    margin-bottom: 800px;
+    margin-bottom: 750px;
 }
 
 .gradient-text {
@@ -17,7 +17,7 @@ body {
     font-size: 90px;
     text-align: center;
     margin-top: 340px;
-    margin-left: 100px;
+    margin-left: 30px;
     color: #c59e01;
     position: absolute;
 }
@@ -109,7 +109,7 @@ body {
     font-family: "Lancelot", serif;
     font-size: 50px;
     margin-top: 220px;
-    margin-left: 600px;
+    margin-left: 570px;
     position: absolute;
     font-weight: 100;
 }
