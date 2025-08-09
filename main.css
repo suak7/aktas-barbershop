@@ -7,108 +7,69 @@
 
 body {
     background-color: black;
-    margin: 20px;
-    margin-bottom: 750px;
+    margin: 0; 
+    padding: 0;
 }
 
 .gradient-text {
     font-family: "Bisdak", sans-serif;
     font-weight: 400px;
-    font-size: 90px;
+    font-size: 80px;
     text-align: center;
     margin-top: 340px;
-    margin-left: 30px;
+    margin-left: 120px;
     color: #c59e01;
     position: absolute;
 }
 
-.portfolio {
-    font-family: "DM Sans", sans-serif;
-    font-size: 25px;
-    margin-top: 20px; 
-    margin-left: 80px;
-    color: white;
-    position: absolute;
+.main-header {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    gap: 250px;               
+    flex-wrap: wrap; 
+    width: 100%; 
+    background-color: rgb(20, 20, 20);
 }
 
-.portfolio:after {
+.portfolio, .services, .book {
+    font-family: "DM Sans", sans-serif;
+    font-size: 17px;
+    color: white;
+    position: relative; 
+    cursor: pointer;
+}
+
+.book a {
+    color: white;
+    text-decoration: none;
+}
+
+.portfolio:after, .services:after, .book:after {
     content: '';
     position: absolute;
     width: 100%;
     transform: scaleX(0);
     height: 2px;
-    bottom: 15px;
+    bottom: 16px;
     left: 0;
     background-color: white;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
 
-.portfolio:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-}
-
-.services {
-    color: white;
-    font-family: "DM Sans", sans-serif;
-    font-size: 25px;
-    margin-left: 700px;
-    margin-top: 20px;
-    position: absolute;
-}
-
-.services:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 15px;
-    left: 0;
-    background-color: white;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out; 
-}
-
-.services:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-}
-
-.book {
-    color: white;
-    font-family: "DM Sans", sans-serif;
-    font-size: 25px;
-    margin-left: 1300px;
-    margin-top: 20px;
-    position: absolute;
-    text-decoration: none;
-}
-
-.book:after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    transform: scaleX(0);
-    height: 2px;
-    bottom: 15px;
-    left: 0;
-    background-color: white;
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;   
-}
-
+.portfolio:hover::after,
+.services:hover::after,
 .book:hover::after {
     transform: scaleX(1);
-    transform-origin: bottom left;  
+    transform-origin: bottom left;
 }
 
 .heart-of-midtown {
     color: white;
     font-family: "Lancelot", serif;
     font-size: 50px;
-    margin-top: 220px;
+    margin-top: 150px;
     margin-left: 570px;
     position: absolute;
     font-weight: 100;
